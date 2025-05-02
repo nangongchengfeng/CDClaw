@@ -211,8 +211,8 @@ def fetch_and_save_article_md(csdn_user_id: str, article_id: str):
     markdown_header = f"""---
 title: {article_title}
 date: {publish_time}
-tags: [{tags}] # 通常 tags 是列表形式
-categories: [{categories}] # categories 也常是列表
+tags: {tags}
+categories: {categories} 
 description: "{description}"
 ---
 \n\n""" # description 加引号避免特殊字符问题，加换行
